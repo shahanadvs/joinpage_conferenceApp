@@ -1,0 +1,189 @@
+
+body{
+    scroll-behavior: smooth;
+}
+.left{
+    background-image: url('left.png');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+   
+}
+
+.right{
+    
+    background-image: url('right.png');
+    background-position: top;
+    background-size:cover;
+    
+    height: 100vh;
+}
+
+.joinForm{
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.joinForm{
+    margin-top: -50px;
+}
+.joinForm input{
+    margin-top: 10px;
+    border-radius: 100px;
+    width: 300px;
+    height: 45px;
+    border: solid 2.5px #00c3ff;
+   
+}
+.joinForm ::placeholder{
+    text-align: center;
+    font-size: 18px;
+    color: #959899;
+    letter-spacing: 3px;
+}
+
+.joinForm button{
+    width: 125px;
+    height: 30px;
+    margin-top: 18px;
+    border-radius: 100px;
+    background-color:#00c3ff ;
+    border: solid #00c3ff;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.joinForm h3{
+    word-spacing: 10px;
+    font-size: 25px;
+    font-family: 'Dubai';
+    font-weight: 800px;
+    color:#00c3ff ;
+    
+    
+}
+
+.navbar-mobile, .navbar-desktop{
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.createForm{
+    margin-top: -60px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.createForm  h3{
+    word-spacing: 10px;
+    font-size: 25px;
+    font-family: 'Dubai';
+    font-weight: 800px;
+    color: white ;
+    
+    
+}
+.createForm input{
+    margin-top: 5px;
+    border-radius: 100px;
+    width: 300px;
+    height: 45px;
+    border: solid 2.5px #00c3ff;
+   
+}
+.createForm ::placeholder{
+    text-align: center;
+    font-size: 18px;
+    color: #959899;
+    letter-spacing: 3px;
+}
+.createForm button{
+    width: 120px;
+    height: 30px;
+    margin-top: 15px;
+    border-radius: 100px;
+    background-color:white;
+    border: solid white ;
+    color:#00c3ff;
+    font-size: 15px;
+    font-weight: 500;
+    
+}
+
+.navbar-mobile a{
+    color: #00c3ff;
+    font-size: 18px;
+    font-family: 800;
+    padding-right:25px ;
+    text-decoration: none;
+}
+.navbar-mobile button{
+    width: 100px;
+    height: 35px;
+    
+    border-radius: 100px;
+    background-color:#00c3ff;
+    border: solid white ;
+    color:white;
+    font-size: 15px;
+    font-weight: 500;
+}
+.navbar-desktop a{
+    color:white;
+    font-size: 18px;
+    font-family: 800;
+    padding-right:25px ;
+    text-decoration: none;
+}
+.navbar-desktop button{
+    width: 100px;
+    height: 35px;
+    
+    border-radius: 100px;
+    background-color:white;
+    border: solid #00c3ff ;
+    color:#00c3ff;
+    font-size: 15px;
+    font-weight: 500;
+}
+input{
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Dubai';
+}
+.button{
+    transition: 0.5s;
+}
+ .createForm button:hover, .navbar-desktop button:hover{
+    background-color: #00c3ff;
+    color: white;
+    border: solid 2px white;
+}
+.navbar-mobile button:hover,.joinForm button:hover{
+    background-color: white;
+    border: solid 2px #00c3ff ;
+    color: #00c3ff;
+}
+
+@media (max-width: 991.98px) { 
+    .navbar-desktop{
+        visibility: hidden;
+    }
+    .joinForm input, .createForm input{
+        width: 350px;
+    }
+}
+@media (min-width: 991.98px) { 
+    .navbar-mobile{
+        visibility: hidden;
+    }
+}
